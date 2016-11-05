@@ -1,6 +1,6 @@
 %YAML 1.2
 ---
-name: Ruby
+name: BMC-Ruby
 # TODO: unresolved issues
 #
 # text:
@@ -115,7 +115,8 @@ contexts:
     # Defining a class method
     - match: \b(class)\b(?=\s*<)
       scope: keyword.control.class.ruby
-    - match: '\b(class)\b'
+      # BMC : Add space to support `class:` symbol
+    - match: '\b(class)\b '
       scope: meta.class.ruby keyword.control.class.ruby
       push: class-declaration
 
@@ -438,7 +439,7 @@ contexts:
         - match: '\]'
           pop: true
         - include: expressions
-    - match: '(::)?(\b[[:upper:]]\w*)(?=((\.|::)[[:alpha:]_]|\[))'
+    - match: '(::)?(\b[[:upper:]]\w*)'
       captures:
         1: punctuation.accessor.ruby
         2: support.class.ruby
