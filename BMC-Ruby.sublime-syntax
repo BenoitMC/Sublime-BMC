@@ -574,13 +574,6 @@ contexts:
     - match: |-
         (?x:
           \b(
-            Array|
-            Complex|
-            Float|
-            Hash|
-            Integer|
-            Rational|
-            String|
             __callee__|
             __dir__|
             __method__|
