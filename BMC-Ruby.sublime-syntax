@@ -50,6 +50,7 @@ file_extensions:
   - config.ru
   - fcgi
   - Gemfile
+  - Podfile
   - gemspec
   - Guardfile
   - irbrc
