@@ -431,6 +431,7 @@ contexts:
         - match: '\]'
           pop: true
         - include: expressions
+    # BMC : Change to support `model = Some::Class` and `method(Some::Class)`
     - match: '(::)?(\b[[:upper:]]\w*)'
       captures:
         1: punctuation.accessor.ruby
@@ -563,6 +564,7 @@ contexts:
         )
       scope: support.function.builtin.ruby
     # Methods from the Kernel class not handled elsewhere
+    # BMC : Remove Array/Integer/String/... they are classes
     - match: |-
         (?x:
           \b(
