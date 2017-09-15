@@ -87,9 +87,9 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Keywords &amp; Var types</string>
+			<string>Keywords (def, var, this, self, ...)</string>
 			<key>scope</key>
-			<string>keyword, storage.type</string>
+			<string>keyword, storage.type, variable.language</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -217,18 +217,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#0099FF</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Language methods
-(this, self, ...)</string>
-			<key>scope</key>
-			<string>variable.language</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#FF3333</string>
 			</dict>
 		</dict>
 	</array>
