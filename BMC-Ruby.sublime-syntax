@@ -476,6 +476,7 @@ contexts:
         )
       scope: support.function.builtin.ruby
     # Methods that may be followed by a regex
+    # BMC : Remove match to fix `match?(/str/)`
     - match: |-
         (?x:
           \b(
@@ -487,7 +488,6 @@ contexts:
             assert_match|
             gsub|
             index|
-            match|
             scan|
             sub
           )\b
